@@ -4,7 +4,7 @@ import sys
 import time
 
 class Hole():
-    def __init__(self, position=(500, 500)):
+    def __init__(self, position = (500, 500)):
         self.zom = False
         self.position = position
         self.appear_time = 0
@@ -146,7 +146,7 @@ class Game():
             
             for _ in range(self.life):
                 self.screen.blit(self.heart_image, (x, y))
-                x -= heart_width + margin  
+                x -= heart_width + margin
     
     def run(self):
             # Initialize the game
